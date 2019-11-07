@@ -17,6 +17,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <EditText
         android:id="@+id/incomePerHourEditText"
         android:layout_marginRight="20dp"
@@ -27,6 +31,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <EditText
         android:id="@+id/workHoursEditText"
         android:layout_marginRight="20dp"
@@ -36,6 +46,12 @@
         android:hint="Work Hours per day"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.TextInputLayout>
+        
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         
     <EditText
         android:id="@+id/taxRateEditText"
@@ -46,16 +62,24 @@
         android:hint="Tax Rate (%)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         
     <EditText
         android:id="@+id/savingsRateEditText"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:inputType="number"
-        android:imeOptions="actionNext"
+        android:imeOptions="actionDone"
         android:hint="Savings Rate (%)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/calculateButton"
