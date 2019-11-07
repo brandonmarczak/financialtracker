@@ -7,86 +7,180 @@
     android:padding="16dp"
     android:layout_height="match_parent">
 
-    <TextView
-        android:text="Input Values Accordingly"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="20dp"
+    <ScrollView
+        android:scrollbars="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent">
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/incomePerHourEditText"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:inputType="number"
-        android:imeOptions="actionNext"
-        android:hint="£ per hour"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Input Values Accordingly"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/incomePerHourEditText"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:hint="£ per hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <EditText
-        android:id="@+id/workHoursEditText"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:inputType="number"
-        android:imeOptions="actionNext"
-        android:hint="Work Hours per day"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            </android.support.design.widget.TextInputLayout>
 
-    </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/workHoursEditText"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:hint="Work Hours per day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </android.support.design.widget.TextInputLayout>
         
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
         
-    <EditText
-        android:id="@+id/taxRateEditText"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:inputType="number"
-        android:imeOptions="actionNext"
-        android:hint="Tax Rate (%)"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/taxRateEditText"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:hint="Tax Rate (%)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    </android.support.design.widget.TextInputLayout>
+            </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
         
-    <EditText
-        android:id="@+id/savingsRateEditText"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:inputType="number"
-        android:imeOptions="actionDone"
-        android:hint="Savings Rate (%)"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/savingsRateEditText"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="Savings Rate (%)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    </android.support.design.widget.TextInputLayout>
+            </android.support.design.widget.TextInputLayout>
 
-    <Button
-        android:id="@+id/calculateButton"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"
-        android:text="Caltulate"
-        android:layout_width="300dp"
-        android:layout_height="50dp"/>
+                <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        
+            <EditText
+                android:id="@+id/savingsRateEditText"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="Savings Rate (%)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        
+            <EditText
+                android:id="@+id/savingsRateEditText"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="Savings Rate (%)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        
+            <EditText
+                android:id="@+id/savingsRateEditText"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="Savings Rate (%)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        
+            <EditText
+                android:id="@+id/savingsRateEditText"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="Savings Rate (%)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        
+            <EditText
+                android:id="@+id/savingsRateEditText"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:hint="Savings Rate (%)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Caltulate"
+                android:layout_width="300dp"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
